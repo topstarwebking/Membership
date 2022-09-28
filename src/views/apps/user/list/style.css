@@ -1,0 +1,20 @@
+.MuiBackdrop-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: -1;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 0 0 / 0%);
+    -webkit-tap-highlight-color: transparent;
+}
+.candidateBox{
+    border-radius: 14px !important;
+}
+.candidateTable{
+    height: 190px !important;
+    width: 280px !important;
+}

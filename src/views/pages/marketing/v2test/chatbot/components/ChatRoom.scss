@@ -1,0 +1,108 @@
+// Core variables and mixins
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/mixins";
+@import "../../../../../../assets/scss/bootstrap-extended/mixins";
+
+// Load variable overrides
+@import "../../../../../../assets/scss/core/variables/variables";
+@import "~bootstrap/scss/_variables.scss";
+
+// Overrides user variable
+@import "../../../../../../assets/scss/core/variables/components-variables";
+
+.chat-body {
+  display: block;
+  margin: 10px 30px 0 0;
+  overflow: hidden;
+  .chat-content {
+    text-align: right;
+    display: block;
+    float: right;
+    padding: 0.75rem 1rem;
+    margin: 0 20px 0 0;
+    clear: both;
+    color: $white;
+    background: linear-gradient(
+      118deg,
+      rgba($primary, 1),
+      rgba($primary, 0.7)
+    );
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12),
+      0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    p {
+      margin: 0;
+    }
+  }
+  .chat-time{
+    // text-align: right;
+    display: block;
+    float: right;
+    // padding: 0.75rem 1rem;
+    // margin: 0 20px 10px 0;
+    clear: both;
+    p {
+      margin: 0;
+      font-size: 10px;
+    }
+  }
+}
+
+.chat-right {
+  margin-left: 10px;
+  margin-top: 15px;
+  .chat-avatar {
+    float: right;
+  }
+  .chat-body {
+    margin: 0;
+  }
+  .chat-content {
+    text-align: right;
+    float: right;
+    // margin: 10px 10px 0 20px;
+    color: $body-color;
+    background-color: linear-gradient(118deg, #00a6e1, rgba(0, 166, 225, 0.7)) !important;
+    border: 1px solid $gray-300;
+    color: white;
+  }
+  .chat-time{
+    text-align: right;
+    float: right;
+    margin-right: 20px;
+    // margin: 10px 10px 10px 20px;
+    // color: $body-color;
+    // background: none;
+    // background-color: lighten($white, 18%);
+    // border: 1px solid $gray-300;
+  }
+}
+
+.chat-left {
+  margin-left: 10px;
+  margin-top: 15px;
+  .chat-avatar {
+    float: left;
+  }
+  .chat-body {
+    margin: 0;
+  }
+  .chat-content {
+    text-align: left;
+    float: left;
+    // margin: 10px 10px 0 20px;
+    color: $body-color;
+    background: none;
+    background-color: lighten($white, 18%);
+    border: 1px solid $gray-300;
+  }
+  .chat-time{
+    text-align: left;
+    float: left;
+    // margin: 10px 10px 10px 20px;
+    // color: $body-color;
+    // background: none;
+    // background-color: lighten($white, 18%);
+    // border: 1px solid $gray-300;
+  }
+}

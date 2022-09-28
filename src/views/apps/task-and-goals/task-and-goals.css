@@ -1,0 +1,67 @@
+.goal-search-box {
+    border: 1.5px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.task-header {
+    background-color: white;
+    padding: 1rem;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.task-body1 {
+    margin-top: 10px;
+}
+
+.task-body2 {
+    margin-top: 10px;
+    border-bottom: 1px solid #E7E7E7;
+    border-top: 1px solid #E7E7E7;
+}
+
+.filter:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+/* goals  */
+.goalsList-grid {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+#column-name {
+    width: 100%;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked+.MuiSwitch-track {
+    background-color: #0184FF;
+    color: #0184FF;
+}
+
+[data-column-id="task-info-name"] {
+    display: flex;
+    justify-content: start !important;
+}
+
+[data-column-id="assignee-activity"] {
+    display: flex;
+    justify-content: start !important;
+}
+
+[data-column-id="path-list"] {
+    display: flex;
+    justify-content: start !important;
+}
+
+input:disabled {
+    background: #dddddd !important;
+}
+
+@media (max-width: 1200px) {
+    .goalsList-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}

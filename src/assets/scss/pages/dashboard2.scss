@@ -1,0 +1,259 @@
+.section-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.dash-single-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.single-stat-card {
+  background: #ffffff;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  padding: 10px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mini-card-content {
+  height: 25px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mini-card-title {
+  font-weight: 500;
+}
+.mini-card-amt {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+.viewAllBtn {
+  padding: 5px;
+  background-color: #e2ecff;
+  color: #0184ff;
+  font-size: 11px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.second-row {
+  display: flex;
+  width: 100%;
+  height: 330px;
+}
+.second-row-left {
+  width: 30%;
+}
+.second-row-right {
+  width: 70%;
+}
+.stat-row {
+  display: flex;
+}
+.left-stat {
+  width: 50%;
+  margin-right: 10px;
+}
+.right-stat {
+  width: 50%;
+}
+.stat-card {
+  height: 500px;
+}
+.stat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sch-left {
+  display: flex;
+  align-items: center;
+}
+.sch-left span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.sch-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.stat-filter-area {
+  margin: 14px 0;
+}
+.btn-filter-primary {
+  width: 90px;
+  height: 27px;
+  background: #0184ff;
+  color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #0184ff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.btn-filter-secondary {
+  width: 90px;
+  height: 27px;
+  border: 1px solid #c4c4c4;
+  color: #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.action-icon-info {
+  color: #c4c4c4;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.action-icon-eye {
+  color: #0184ff;
+  cursor: pointer;
+}
+.table-footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.table-pagination {
+  height: 50px;
+}
+.dash-pagination {
+  margin-top: 10px;
+  position: absolute;
+  right: 10%;
+}
+.table-tag {
+  // height: 25px;
+  // padding: 5px;
+  // font-size: 11px;
+  // border-radius: 30px;
+  text-align: center;
+}
+.completed {
+  background-color: #ecfde6;
+  color: #37d400;
+}
+.pending {
+  background-color: #fff4cb;
+  color: #ffc900;
+}
+.progress {
+  background-color: #daedff;
+  color: #0184ff;
+  min-height: 20px;
+  line-height: 20px;
+  // padding-left: 30px;
+  margin-bottom: 0px;
+}
+.notcompleted {
+  background-color: #ffe1e1;
+  color: #ff3e3e;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.m-r-10 {
+  margin-left: 10px;
+}
+
+.data-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.no-data {
+  width: 100px;
+  height: 100px;
+}
+
+._card {
+  min-height: 515px;
+}
+
+._card .MuiTableContainer-root {
+  box-shadow: none;
+}
+
+// reset
+.progress:last-child {
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .stat-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-stat,
+  .right-stat {
+    width: 100%;
+  }
+
+  //
+  .second-row {
+    display: flex;
+    width: 100%;
+    height: 610px;
+    flex-direction: column;
+  }
+  .second-row-left {
+    width: 100%;
+  }
+  .second-row-right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  ._card {
+    min-height: 580px;
+  }
+  .my_task_card {
+    min-height: 640px;
+  }
+
+  .progress-tag,
+  .completed-tag,
+  .notcompleted-tag {
+    padding: 0px 0px;
+    font-size: 8px;
+    border-radius: 10px;
+  }
+}
+
+.progress-tag,
+.completed-tag,
+.notcompleted-tag {
+  padding: 2px 3px;
+  font-size: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.progress-tag {
+  background: #dfdcff;
+  color: #1400fb;
+}
+.completed-tag {
+  background: #deffe6;
+  color: #00d12e;
+}
+.notcompleted-tag {
+  background: #ffc6c6;
+  color: #ff3e3e;
+}
+
+.MuiTableCell-alignCenter {
+  text-align: left;
+}

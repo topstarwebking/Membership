@@ -1,0 +1,8 @@
+.MuiInput-underline:before {
+   
+    border-bottom: none !important;
+}
+
+.was-validated .custom-select:invalid, [dir] .custom-select.is-invalid {
+    border-color: #ea5455 !important;
+}

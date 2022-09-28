@@ -1,0 +1,18 @@
+.responsive-text{
+    font-size: 1rem;
+}
+ .sign_img{
+    width: 100px;
+    object-fit: contain;
+}
+
+@media (max-width: 576px) {
+    .sign_img{
+        width: 80px;
+        object-fit: contain;
+    }
+    .responsive-text{
+        font-size:10px;
+    }
+  }
+  

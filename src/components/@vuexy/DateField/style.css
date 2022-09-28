@@ -1,0 +1,48 @@
+#date-filed input:focus ~ .floating-label-input,
+#date-filed input:disabled ~ .floating-label-input,
+#date-filed input:-webkit-autofill ~ .floating-label-input,
+#date-filed input:not(:focus):valid ~ .floating-label-input {
+  top: 5px;
+  bottom: 10px;
+  left: 30px;
+  font-size: 10px;
+  opacity: 1;
+  color: grey;
+}
+
+#date-filed  .floating-label-input {
+  pointer-events: none;
+  font-size: 14px;
+  transition: 0.5s ease all;
+  color: #1D4B44;
+  overflow: hidden;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+#date-filed  .floating-label-textarea.required::after,
+#date-filed  .floating-label-input.required::after {
+  content: " *";
+  color: red;
+  font-size: 15px;
+  right: 10;
+}
+
+#date-filed  input.form-control {
+  border-radius: 2px;
+  font-size: 14px;
+  color: #000000;
+  border: 1px solid #bfbebe;
+  background-color:transparent;
+}
+
+
+#date-filed input.form-control {
+  height:calc(1.7em + .95rem + 2px)!important;
+}
+#date-filed  input.form-control:disabled {
+  background-color: transparent;
+  opacity: 0.6;
+  color: #c6c6c6;
+}
+
+

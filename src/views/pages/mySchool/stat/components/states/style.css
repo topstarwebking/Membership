@@ -1,0 +1,44 @@
+.table-01 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-01 th,
+.table-01 td {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.table-01 th {
+    background-color: #f7f7f7;
+
+}
+
+.table-01 {
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+    .table-01 td,
+    .table-01 th,
+    .table-01 tr {
+        display: block;
+        margin-top: -1px;
+    }
+
+    .table-01 th {
+        text-align: left;
+    }
+
+    .table-01 td {
+        padding-left: 30px;
+    }
+}
+
+

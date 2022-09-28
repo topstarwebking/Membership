@@ -1,0 +1,12 @@
+@media (min-width: 650px){
+#bigModal.modal-dialog {
+    max-width: 60%;
+}
+}
+
+@media only screen and (min-device-width: 570px) and (max-device-width: 650px) and (orientation:portrait) 
+    {
+        #bigModal.modal-dialog {
+        max-width: 80%;
+    }
+    }
